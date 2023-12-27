@@ -187,12 +187,16 @@ def main(input_folder):
     """
 
     files = os.listdir(input_folder)
+    save_folder = input_folder + "_output"
+
+    if not os.path.exists(save_folder):
+        os.makedirs(save_folder)
 
     for file in files:
         filepath = os.path.join(input_folder, file)
         print(f"Processing file: {filepath}")
         
-        output_filepath = os.path.join(input_folder, f"{file.split('.')[0]}_output.jsonl")
+        output_filepath = os.path.join(save_folder, f"{file.split('.')[0]}_output.jsonl")
 
         with open(filepath, encoding='utf-8') as f:
             data = [json.loads(line) for line in f]
