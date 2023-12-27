@@ -1,0 +1,6 @@
+python-dotenv
+ratelimit
+google-generativeai
+jsonlines
+huggingface_hub
+datasets
