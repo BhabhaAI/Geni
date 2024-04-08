@@ -1,5 +1,5 @@
-# GenHi
-Generating Synthetic Hindi &amp; Roman Hindi Datasets
+# Geni
+Generating Synthetic datasets for Indic Languages.
 
 ## Installation
 `pip install .`
